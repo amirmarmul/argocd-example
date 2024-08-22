@@ -10,5 +10,7 @@ resources:
 patches:
   - path: overlays/argocd-server-patch.yaml
     target:
+      group: apps
       kind: Deployment
       name: argocd-server
+      version: v1
