@@ -5,7 +5,7 @@ namespace: argocd
 resources:
   - base/repository.yaml
   - base/applications.yaml
-  - https://github.com/argoproj/argo-cd/manifests/install.yaml?ref=v2.12.1
+  - https://github.com/argoproj/argo-cd/manifests/cluster-install?ref=v2.12.1
 
 patches:
   - path: overlays/argocd-server-patch.yaml
